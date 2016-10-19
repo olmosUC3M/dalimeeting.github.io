@@ -6,7 +6,7 @@ layout: page
 <h1 id='venue'><b>Venue</b></h1> 
 
 {% if site.conference.room %}
-The conference will take place in <a href=https://www.h10hotels.com/en/tenerife-hotels/h10-costa-adeje-palace?gclid=CKbVvYGq5s8CFRE6Gwod7-UFkg> {{ site.conference.room }} </a>, {{ site.conference.venue }}, {{ site.conference.location }}.
+The conference will take place in {{ site.conference.room }}, {{ site.conference.venue }}, {{ site.conference.location }}.
 {% else %}
 The {{site.conference.year }} {{ site.conference.name }} will take place in the {{site.conference.venue }}, {{ site.conference.location }}.
 {% endif %}
