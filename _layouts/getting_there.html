@@ -5,20 +5,11 @@ layout: page
 
 <h1 id='venue'><b>Venue</b></h1> 
 
-{% if site.conference.room %}
-The conference will take place in {{ site.conference.room }}, {{ site.conference.venue }}, {{ site.conference.location }}.
-{% else %}
-The {{site.conference.year }} {{ site.conference.name }} will take place in the {{site.conference.venue }}, {{ site.conference.location }}.
-{% endif %}
+
+The {{ site.conference.name }} conference will take place in the {{site.conference.venue }}, {{ site.conference.location }}.
 From {{ site.conference.dates[0] | date: "%A %B, %-d %Y" }} to  {{ site.conference.dates.last | date: "%A %B, %-d %Y" }}.
 
-<!--{{ content }}
 
-  
-{% if site.map.show %}
-{% include map.html %}
-{% endif %}	   
--->
 <br>
 <br>
 
