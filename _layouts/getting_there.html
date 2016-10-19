@@ -6,7 +6,7 @@ layout: page
 <h1 id='venue'><b>Venue</b></h1> 
 
 {% if site.conference.room %}
-The {{site.conference.year }} {{ site.conference.name }} will take place in <a href=https://www.h10hotels.com/en/tenerife-hotels/h10-costa-adeje-palace?gclid=CKbVvYGq5s8CFRE6Gwod7-UFkg>{{ site.conference.room }}</a>, {{ site.conference.venue }}, {{ site.conference.location }}.
+The {{ site.conference.name }} conference will take place in <a href=https://www.h10hotels.com/en/tenerife-hotels/h10-costa-adeje-palace?gclid=CKbVvYGq5s8CFRE6Gwod7-UFkg> {{ site.conference.room }} </a>, {{ site.conference.venue }}, {{ site.conference.location }}.
 {% else %}
 The {{site.conference.year }} {{ site.conference.name }} will take place in the {{site.conference.venue }}, {{ site.conference.location }}.
 {% endif %}
@@ -24,7 +24,7 @@ From {{ site.conference.dates[0] | date: "%A %B, %-d %Y" }} to  {{ site.conferen
 
 <p>
 <a href="https://www.google.com/maps/d/u/1/embed?mid=16KlJ1LBjuox7Ded6JKSL6ttMGkU">
-<img border="0" src="assets/Map.png">
+<img border="0" src="assets/Map.png width="75%" height="75%"">
 </a>
 </p>
      <br>
@@ -33,7 +33,6 @@ From {{ site.conference.dates[0] | date: "%A %B, %-d %Y" }} to  {{ site.conferen
 <ul>
   <li>27 Km from Tenerife Sur Airport</li>
   <li>85 Km from Tenerife Norte Airport</li>
-  <li>84 Km from Santa Cruz de Tenerife</li>
 </ul> 
     </p>
 
