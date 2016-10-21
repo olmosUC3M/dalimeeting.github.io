@@ -15,8 +15,9 @@
       </a>
 
       <div class="trigger">
-        {% for page in site.pages | sort: "weight" %}
-          {% if page.title %}
+        {% assign pages = site.pages | sort:"weight"  %}     
+        {% for in pages%}
+          {% if p.title %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
